@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Notes App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>My Notes App 📝</h1>
+    <p class="subtitle">Write your thoughts and save your draft.</p>
+
+    <label for="note-text">Your note:</label>
+    <textarea
+      id="note-text"
+      maxlength="1000"
+      placeholder="Start typing your note here..."
+      rows="10"
+    ></textarea>
+
+    <div class="counters">
+      <p id="char-count">0 / 200 characters</p>
+      <p id="word-count">0 words</p>
+    </div>
+
+    <div class="buttons">
+      <button id="clear-btn" type="button">Clear</button>
+      <button id="theme-toggle" type="button">Dark mode</button>
+    </div>
+
+    <p class="hint">Tip: Press Escape inside the text area to clear your note.</p>
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>
